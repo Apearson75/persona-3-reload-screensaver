@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Widget.Theme.Persona3ReloadScreensaver.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.Persona3ReloadScreensaver.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

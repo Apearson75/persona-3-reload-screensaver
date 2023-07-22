@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        flatDir {
+            dirs('libs')
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Persona 3 Reload Screensaver"
+include ':app'
+include ':auth-sample'
+include ':auth-lib'
+include ':app-remote-lib'
+include ':app-remote-sample'

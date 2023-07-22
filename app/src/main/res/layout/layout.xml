@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="541dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="457dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="-84dp"
+        android:fontFamily="@font/p3_font"
+        android:format12Hour="hh:mm:ss a"
+        android:textColor="@color/white"
+        android:textSize="100dp" />
+
+    <TextView
+        android:id="@+id/batteryLevel"
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="-240dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/p3_font"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/playing"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/p3_font"
+        android:layout_width="500dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        />
+
+
+</RelativeLayout>
