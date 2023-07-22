@@ -70,11 +70,7 @@ class SpotifyAPI(var activity: Activity, var context: Context, var clientId: Str
                 }
             },
             Response.ErrorListener { error ->
-                if (error.networkResponse.statusCode == 401) {
-                    nativeGetAccessToken()
-                } else {
-                    Log.d("Playback Error", error.toString())
-                }
+                Log.e("Playback State Error", error.toString())
             }) {
             @Throws(AuthFailureError::class)
             override fun getHeaders(): Map<String, String> {
@@ -104,7 +100,7 @@ class SpotifyAPI(var activity: Activity, var context: Context, var clientId: Str
                 if (error.networkResponse.statusCode == 401) {
                     nativeGetAccessToken()
                 } else {
-                    Log.d("Currently Playing Error", error.toString())
+                    Log.e("Currently Playing Error", error.toString())
                 }
             }) {
                 @Throws(AuthFailureError::class)
